@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .back {
+        background-color: hsl(212, 45%, 89%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .qr {
+        background-color: white;
+        border-radius: 25px;
+        padding: 18px 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        width: 21rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .code {
+        border-radius: 20px;
+        height: 20rem;
+        width: 20rem;
+      }
+      .heading {
+        margin-top: 18px;
+        font-size: 1.7rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+      }
+      .para {
+        margin-top: -2rem;
+        color: gray;
+        font-size: large;
+        font-weight: 400;
+        font-family: "Outfit", sans-serif;
+      }
+      @media screen and (max-width: 425px) {
+        .qr {
+          width: 17rem;
+        }
+        .code {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        .qr {
+          width: 14rem;
+        }
+        .code {
+          width: 13rem;
+          height: 13rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <div class="qr">
+        <img
+          class="code"
+          src="/images/image-qr-code.png"
+          alt="image not found"
+        />
+        <h4 class="heading">
+          Improve your front-end skills by building projects
+        </h4>
+        <div class="para">
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
